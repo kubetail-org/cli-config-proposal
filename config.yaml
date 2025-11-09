@@ -82,6 +82,8 @@ dashboard:
 
   ## theme ##
   #
+  # Sets the default theme to use for the UI
+  #
   # Default value: system
   #
   # One of:
