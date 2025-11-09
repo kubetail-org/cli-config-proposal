@@ -21,14 +21,6 @@ general:
   #
   kubeconfig:
 
-  ## context ##
-  #
-  # Overrides the default context defined in kubeconfig
-  #
-  # Default value: __empty__
-  #
-  context:
-
 ## commands ##
 #
 commands:
