@@ -9,9 +9,9 @@
 #
 version: 1
 
-## defaults ##
+## general ##
 #
-defaults:
+general:
 
   ## kubeconfig ##
   #
@@ -28,6 +28,10 @@ defaults:
   # Default value: __empty__
   #
   context:
+
+## commands ##
+#
+commands:
 
   ## logs ##
   #
@@ -72,27 +76,31 @@ defaults:
     #
     port: 7500
 
-    ## theme ##
-    #
-    # Default value: system
-    #
-    # One of:
-    #   - system
-    #   - light
-    #   - dark
-    # 
-    theme: system
+## dashboard ##
+#
+dashboard:
 
-    ## columns ##
-    #
-    # Sets the default columns to show when displaying log records
-    #
-    # Default value: [ts, dot, message]
-    #
-    columns:
-      - ts
-      - dot
-      - message
+  ## theme ##
+  #
+  # Default value: system
+  #
+  # One of:
+  #   - system
+  #   - light
+  #   - dark
+  # 
+  theme: system
+
+  ## columns ##
+  #
+  # Sets the default columns to show when displaying log records
+  #
+  # Default value: [ts, dot, message]
+  #
+  columns:
+    - ts
+    - dot
+    - message
 
 ## custom-filters ##
 #
@@ -121,6 +129,22 @@ custom-parsers:
   # Sets variables for a custom formatter
   #
   <formatter-name>:
+
+## external ##
+#
+external:
+
+  ## datadog ##
+  #
+  # Sets connection parameters for datadog
+  #
+  datadog:
+
+  ## grafana ##
+  #
+  # Sets the connection parameters for grafana
+  #
+  grafana:
 
 ## profiles ##
 #
